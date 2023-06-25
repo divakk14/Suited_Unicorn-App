@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_AppApp.swift */; };
+		A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */; };
 		A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F502A47E59F00D757E1 /* ContentView.swift */; };
 		A7288F532A47E5A000D757E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F522A47E5A000D757E1 /* Assets.xcassets */; };
 		A7288F562A47E5A000D757E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		A7288F4B2A47E59F00D757E1 /* Suited_Unicorn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suited_Unicorn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suited_Unicorn_AppApp.swift; sourceTree = "<group>"; };
+		A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suited_Unicorn_App.swift; sourceTree = "<group>"; };
 		A7288F502A47E59F00D757E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7288F522A47E5A000D757E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		A7288F4D2A47E59F00D757E1 /* Suited_Unicorn App */ = {
 			isa = PBXGroup;
 			children = (
-				A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_AppApp.swift */,
+				A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */,
 				A7288F502A47E59F00D757E1 /* ContentView.swift */,
 				A7288F522A47E5A000D757E1 /* Assets.xcassets */,
 				A7288F542A47E5A000D757E1 /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */,
-				A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_AppApp.swift in Sources */,
+				A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

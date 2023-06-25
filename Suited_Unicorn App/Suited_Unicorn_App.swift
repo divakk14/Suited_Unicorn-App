@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Suited_Unicorn_AppApp: App {
+struct Suited_Unicorn_App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
