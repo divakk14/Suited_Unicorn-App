@@ -11,6 +11,8 @@
 		A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F502A47E59F00D757E1 /* ContentView.swift */; };
 		A7288F532A47E5A000D757E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F522A47E5A000D757E1 /* Assets.xcassets */; };
 		A7288F562A47E5A000D757E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */; };
+		A7288F682A47EE4E00D757E1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F672A47EE4E00D757E1 /* FeedView.swift */; };
+		A7288F6B2A47F0E100D757E1 /* TweetsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F6A2A47F0E100D757E1 /* TweetsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A7288F502A47E59F00D757E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7288F522A47E5A000D757E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7288F672A47EE4E00D757E1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		A7288F6A2A47F0E100D757E1 /* TweetsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,10 @@
 		A7288F4D2A47E59F00D757E1 /* Suited_Unicorn App */ = {
 			isa = PBXGroup;
 			children = (
+				A7288F622A47ED4900D757E1 /* Model */,
+				A7288F612A47ED4300D757E1 /* Extensions */,
+				A7288F602A47ED3E00D757E1 /* Service */,
+				A7288F5C2A47ED0800D757E1 /* Core */,
 				A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */,
 				A7288F502A47E59F00D757E1 /* ContentView.swift */,
 				A7288F522A47E5A000D757E1 /* Assets.xcassets */,
@@ -65,6 +73,76 @@
 				A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7288F5C2A47ED0800D757E1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7288F632A47ED8A00D757E1 /* Components  */,
+				A7288F642A47EDA300D757E1 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7288F602A47ED3E00D757E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A7288F612A47ED4300D757E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7288F622A47ED4900D757E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7288F632A47ED8A00D757E1 /* Components  */ = {
+			isa = PBXGroup;
+			children = (
+				A7288F692A47F05400D757E1 /* Tweets */,
+			);
+			path = "Components ";
+			sourceTree = "<group>";
+		};
+		A7288F642A47EDA300D757E1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A7288F662A47EDE600D757E1 /* View */,
+				A7288F652A47EDD900D757E1 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A7288F652A47EDD900D757E1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7288F662A47EDE600D757E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7288F672A47EE4E00D757E1 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7288F692A47F05400D757E1 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				A7288F6A2A47F0E100D757E1 /* TweetsRowView.swift */,
+			);
+			path = Tweets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */,
+				A7288F6B2A47F0E100D757E1 /* TweetsRowView.swift in Sources */,
+				A7288F682A47EE4E00D757E1 /* FeedView.swift in Sources */,
 				A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
