@@ -11,7 +11,8 @@ import SwiftUI
 struct Suited_Unicorn_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+            
         }
     }
 }
