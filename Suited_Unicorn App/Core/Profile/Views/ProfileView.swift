@@ -27,17 +27,48 @@ struct ProfileView: View {
                 Text("Your moms favorite villain")
                     .font(.subheadline)
                     .padding(.vertical)
-                HStack{
+                HStack(spacing: 24){
                     HStack{
                         Image(systemName: "mappin.and.ellipse")
                         Text("Gotham, NY")
                         
                     }
+                    
                     HStack{
+                        Image(systemName: "link")
+                        Text("www.thejoker.com")
+                        
                         
                     }
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    
+                    
+                    
                 }
+                HStack(spacing: 24){
+                    HStack(spacing: 4){
+                        Text("800").font(.subheadline).bold()
+                        
+                        Text("Following").font(.caption)
+                            .foregroundColor(.gray)
+                        
+                    }
+                    
+                    HStack(spacing: 4){
+                        Text("6.9M").font(.subheadline).bold().foregroundColor(.black)
+                        
+                        Text("Followers").font(.caption)
+                            .foregroundColor(.gray)
+                        
+                    }
+
+                    
+                }
+                .padding(.vertical)
+
             }
+                
             .padding(.horizontal)
             Spacer()
         }
