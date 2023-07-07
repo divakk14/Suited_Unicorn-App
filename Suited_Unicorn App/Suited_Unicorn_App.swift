@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct Suited_Unicorn_App: App {
     var body: some Scene {
         WindowGroup {
