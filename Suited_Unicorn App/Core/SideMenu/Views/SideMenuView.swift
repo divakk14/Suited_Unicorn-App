@@ -12,9 +12,9 @@ struct SideMenuView: View {
         
         VStack(alignment: .leading){
             Circle()
-                .frame(width: 48, height: 48)
+                .frame( width: 48, height: 48)
             
-            VStack(alignment: .leading , spacing : 4){
+            VStack(alignment: .leading , spacing: 4){
                 Text("Divak")
                     .font(.headline)
                 
