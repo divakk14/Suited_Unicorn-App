@@ -24,7 +24,7 @@ struct TweetsRowView: View {
                         Text("@batman")
                             .foregroundColor(.gray)
                             .font(.caption)
-                        Text("2w")
+                          Text("2w")
                             .foregroundColor(.gray)
                             .font(.caption)
                     
