@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F2485B22A601049003A6DAA /* ViewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2485B12A601049003A6DAA /* ViewTweetView.swift */; };
 		6F2485B42A6011EE003A6DAA /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2485B32A6011EE003A6DAA /* TextArea.swift */; };
+		6F2485B72A601C94003A6DAA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2485B62A601C94003A6DAA /* SplashScreenView.swift */; };
 		6F28D12B2A4924D70054705A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F28D12A2A4924D70054705A /* MainTabView.swift */; };
 		6F28D1322A4927C80054705A /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F28D1312A4927C80054705A /* ExploreView.swift */; };
 		6F28D1342A4928000054705A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F28D1332A4928000054705A /* NotificationsView.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		6F2485B12A601049003A6DAA /* ViewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTweetView.swift; sourceTree = "<group>"; };
 		6F2485B32A6011EE003A6DAA /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		6F2485B62A601C94003A6DAA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		6F28D12A2A4924D70054705A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		6F28D1312A4927C80054705A /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		6F28D1332A4928000054705A /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 				6F2485B12A601049003A6DAA /* ViewTweetView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6F2485B52A601C74003A6DAA /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6F2485B62A601C94003A6DAA /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		6F28D1292A4924C20054705A /* MainTab */ = {
@@ -190,6 +200,7 @@
 		A7288F5C2A47ED0800D757E1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				6F2485B52A601C74003A6DAA /* SplashScreen */,
 				6F2485AE2A600FFB003A6DAA /* UploadTweet */,
 				A7F995962A58B057003C3C74 /* SideMenu */,
 				A7288F632A47ED8A00D757E1 /* Components  */,
@@ -395,6 +406,7 @@
 				6F2485B22A601049003A6DAA /* ViewTweetView.swift in Sources */,
 				6F3189502A5E8046000E6BB4 /* SideMenuRowView.swift in Sources */,
 				6F31894E2A5E7FE4000E6BB4 /* SideMenuView.swift in Sources */,
+				6F2485B72A601C94003A6DAA /* SplashScreenView.swift in Sources */,
 				A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */,
 				A7288F6B2A47F0E100D757E1 /* TweetsRowView.swift in Sources */,
 				6F3189542A5E83C0000E6BB4 /* UserStatsView.swift in Sources */,

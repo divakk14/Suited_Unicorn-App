@@ -12,7 +12,9 @@ struct Suited_Unicorn_App: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                ContentView()
+                //ContentView()
+                
+            SplashScreenView()
             }
             
         }
