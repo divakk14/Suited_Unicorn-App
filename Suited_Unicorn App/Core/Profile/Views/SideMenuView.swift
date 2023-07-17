@@ -42,7 +42,6 @@ struct SideMenuView: View {
                 }
                 
             }
-            
             Spacer()
         }
     }
