@@ -16,8 +16,8 @@ struct TextArea: View {
         self._text = text
         UITextView.appearance().backgroundColor = .clear
         
-        
     }
+    
     var body: some View {
         ZStack(alignment: .topLeading){
             if text.isEmpty{
