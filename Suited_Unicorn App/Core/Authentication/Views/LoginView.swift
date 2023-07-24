@@ -22,6 +22,9 @@ struct LoginView: View {
                 CustominputField(imageName: "envelope",
                                  placeholderText: "Email",
                                  text: $password)
+                CustominputField(imageName: "lock",
+                                 placeholderText: "Password",
+                                 text: $password)
             }
 
             .padding(.horizontal, 32)
