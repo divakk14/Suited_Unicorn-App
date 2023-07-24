@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    @State private var email = ""
+    @State private var username = ""
+    @State private var fullname = ""
+    @State private var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            AuthHeaderView(title1: "Get Started", title2: "Create Your Account.")
+            
+            VStack{
+                CustominputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $password)
+                CustominputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $password)
+                CustominputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $password)
+                CustominputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $password)
+            }
+            
+            Spacer()
+        }
+        .ignoresSafeArea()
     }
 }
 

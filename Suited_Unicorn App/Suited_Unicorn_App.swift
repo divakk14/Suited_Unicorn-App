@@ -13,6 +13,7 @@ struct Suited_Unicorn_App: App {
         WindowGroup {
             NavigationView{
                 //ContentView()
+                LoginView()
                 
             SplashScreenView()
             }
