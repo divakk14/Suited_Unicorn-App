@@ -66,7 +66,7 @@ Regex for email / phone recognition.
 Everyone will have their individual privacy preferences. 
 Display name depends on the individual user. 
 
-
+**Firebase for Backend**
 
 Important links. 
 https://www.domo.com/business-apps/app-dev-framework?utm_source=google&utm_medium=paidsearch&campid=7015w000000vnl6AAA&gcreative=598585827733&gdevice=c&gnetwork=g&gkeyword=no%20code%20applications&gplacement=&gmatchtype=e&gtarget=&gadposition=&s_kwcid=AL!5964!3!598585827733!e!!g!!no%20code%20applications&gad=1&gclid=Cj0KCQjw4s-kBhDqARIsAN-ipH3mjE0fivfmbjSWGTMom4Zm6_aEkmAvJE_G4ZCDpwg7TX0EtxsTK3QaAuXSEALw_wcB
