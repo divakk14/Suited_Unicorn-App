@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
-
+import Firebase
 @main
 struct Suited_Unicorn_App: App {
+    
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             NavigationView{
                 //ContentView()
-                LoginView()
+                //LoginView()
                 
-            SplashScreenView()
+                SplashScreenView()
             }
             
         }

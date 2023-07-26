@@ -24,7 +24,9 @@ struct SplashScreenView: View {
     var body: some View {
         VStack {
             if isActive {
-                ContentView()
+                LoginView()
+                //ContentView()
+                
             } else {
                 ZStack {
                                     Color(#colorLiteral(red: 0.8784313725, green: 0.737254902, blue: 0.9529411765, alpha: 1))
