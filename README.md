@@ -75,4 +75,6 @@ LOGO UI COLORS: https://www.figma.com/community/file/840976691611042085
 
 https://developer.apple.com/ios/planning/
 
-
+**Google Account: 
+innovativeapplication1@gmail.com
+Pswd: Haris@#987**
