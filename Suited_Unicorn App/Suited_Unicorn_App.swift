@@ -8,20 +8,20 @@
 import SwiftUI
 import Firebase
 @main
+
 struct Suited_Unicorn_App: App {
-    
+    @StateObject var viewModel = AuthViewModel()
     init(){
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                //ContentView()
+//                ContentView()
                 //LoginView()
-                
                 SplashScreenView()
             }
-            
+            .environmentObject(viewModel)
         }
     }
 }

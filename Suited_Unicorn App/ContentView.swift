@@ -5,16 +5,33 @@
 //  Created by Divak Maheshwari on 6/24/23.
 //
 import SwiftUI
-
 struct ContentView: View{
     @State private var showMenu = false
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
+        Group{
+            //no user logged in
+            if viewModel.userSession == nil{
+                LoginView()
+            }
+            else {
+                //have a logged in user
+                mainInterfaceView
+            }
+        }
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+extension ContentView{
+    var mainInterfaceView: some View{
         ZStack(alignment: .topLeading){
-            
             MainTabView()
                 .navigationBarHidden(showMenu)
-            
             if showMenu{
                 ZStack{
                     Color(.black)
@@ -26,7 +43,6 @@ struct ContentView: View{
                 }
                 .ignoresSafeArea()
             }
-            
             SideMenuView()
                 .frame(width: 300)
                 .offset(x: showMenu ? 0: -300 , y:0)
@@ -49,13 +65,6 @@ struct ContentView: View{
         }
         .onAppear{
             showMenu = false
-            
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
