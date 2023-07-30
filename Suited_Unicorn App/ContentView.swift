@@ -18,17 +18,19 @@ struct ContentView: View{
             else {
                 //have a logged in user
                 mainInterfaceView
-                
             }
         }
     }
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView{
+            ContentView()
+        }
     }
 }
 extension ContentView{
+    
     var mainInterfaceView: some View{
         ZStack(alignment: .topLeading){
             MainTabView()

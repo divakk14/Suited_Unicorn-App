@@ -4,7 +4,6 @@
 //
 //  Created by Divak Maheshwari on 7/28/23.
 //
-
 //import Foundation
 import SwiftUI
 import Firebase
@@ -21,8 +20,7 @@ class AuthViewModel: ObservableObject{
         print("DEBUG: Log in with email \(email)")
     }
     func register(withEmail email: String, password: String, fullname: String, username: String ){
-        Auth.auth().createUser(withEmail: email, password: password){
-            result, error in
+        Auth.auth().createUser(withEmail: email, password: password){result, error in
             if let error = error{
                 print("DEBUG : failed to register with error\(error.localizedDescription)")
                 return
@@ -33,7 +31,24 @@ class AuthViewModel: ObservableObject{
             print("DEBUG : Registered user successfully")
             print("DEBUG: User is \(self.userSession)")
             
+            let data = ["email": email,
+                        "username": username.lowercased(),
+                        "fullname": fullname,
+                        "uid":user.uid]
+            
+            
+            Firestore.firestore().collection("users")
+                .document(user.uid)
+                .setData(data){ _ in
+                    print("DEBUG: Did upload user data...")
+                }
         }
         
+    }
+    func signOut(){
+        
+        userSession = nil
+        //signs user out on server(backend)
+        try? Auth.auth().signOut()
     }
 }

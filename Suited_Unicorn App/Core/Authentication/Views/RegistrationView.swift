@@ -21,7 +21,6 @@ struct RegistrationView: View {
             AuthHeaderView(title1: "Get Started", title2: "Create Your Account.")
             
             VStack(spacing: 40){
-
                 CustominputField(imageName: "person",
                                  placeholderText: "Fullname",
                                  text: $fullname)
@@ -38,10 +37,10 @@ struct RegistrationView: View {
             .padding(32)
             
             Button{
-                viewModel.register(withEmail: email,
-                                   password: password,
-                                   fullname: fullname,
-                                   username: username)
+                viewModel.register(withEmail: fullname,
+                                   password: username,
+                                   fullname: email,
+                                   username: password)
             }label:{
                 Text("Sign Up")
                     .font(.headline)
