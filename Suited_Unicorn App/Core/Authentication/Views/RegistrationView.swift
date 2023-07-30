@@ -21,35 +21,7 @@ struct RegistrationView: View {
             AuthHeaderView(title1: "Get Started", title2: "Create Your Account.")
             
             VStack(spacing: 40){
-//                Text("Registeration")
-//                    .font(.largeTitle)
-//                    .padding(.bottom, 30)
-//                HStack{
-//                    Text("Full name:")
-//                    TextField("Enter your fullname", text:$fullname)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-//                }
-//                .padding(.bottom, 20)
-//
-//                HStack{
-//                    Text("Age:")
-//                    TextField("Enter your age", text:$age)
-//                        .keyboardType(.numberPad)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-//                }
-//                .padding(.bottom, 20)
-//
-//                HStack{
-//                    Text("Age:")
-//                    TextField("Enter your age", text:$age)
-//                        .keyboardType(.numberPad)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-//                }
-//                .padding(.bottom, 20)
-//
-                
-                
-                
+
                 CustominputField(imageName: "person",
                                  placeholderText: "Fullname",
                                  text: $fullname)
@@ -66,7 +38,10 @@ struct RegistrationView: View {
             .padding(32)
             
             Button{
-                print("Sign up here..")
+                viewModel.register(withEmail: email,
+                                   password: password,
+                                   fullname: fullname,
+                                   username: username)
             }label:{
                 Text("Sign Up")
                     .font(.headline)
@@ -81,10 +56,7 @@ struct RegistrationView: View {
             Spacer()
             
             Button{
-                viewModel.register(withEmail: email,
-                                   password: password,
-                                   fullname: fullname,
-                                   username: username)
+                
                 presentationMode.wrappedValue.dismiss()
                 
             }label: {

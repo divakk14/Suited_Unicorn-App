@@ -18,6 +18,7 @@ struct ContentView: View{
             else {
                 //have a logged in user
                 mainInterfaceView
+                
             }
         }
     }
