@@ -19,7 +19,8 @@ struct Suited_Unicorn_App: App {
             NavigationView{
 //                ContentView()
                 //LoginView()
-                SplashScreenView()
+                //SplashScreenView()
+                ContentView()
             }
             .environmentObject(viewModel)
         }
