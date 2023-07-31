@@ -24,6 +24,7 @@
 		6FD68EA12A70ECF00091F861 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA02A70ECF00091F861 /* FirebaseFirestore */; };
 		6FD68EA32A70ECF00091F861 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA22A70ECF00091F861 /* FirebaseFirestoreSwift */; };
 		6FD68EA52A70ECF00091F861 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA42A70ECF00091F861 /* FirebaseStorage */; };
+		A70931442A7760A600F6A8FF /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70931432A7760A600F6A8FF /* ProfilePhotoSelectorView.swift */; };
 		A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */; };
 		A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F502A47E59F00D757E1 /* ContentView.swift */; };
 		A7288F532A47E5A000D757E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F522A47E5A000D757E1 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		6F3189532A5E83C0000E6BB4 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		6FCF822C2A4AA39E000A21F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		6FD68E9B2A70EC080091F861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A70931432A7760A600F6A8FF /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		A7288F4B2A47E59F00D757E1 /* Suited_Unicorn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suited_Unicorn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suited_Unicorn_App.swift; sourceTree = "<group>"; };
 		A7288F502A47E59F00D757E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			children = (
 				A7FB6F022A65DAE7006C14EF /* LoginView.swift */,
 				A7FB6F042A65DB04006C14EF /* RegistrationView.swift */,
+				A70931432A7760A600F6A8FF /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				6F3189542A5E83C0000E6BB4 /* UserStatsView.swift in Sources */,
 				A7FB6F052A65DB04006C14EF /* RegistrationView.swift in Sources */,
 				A7FB6F072A65DD73006C14EF /* RoundedShape.swift in Sources */,
+				A70931442A7760A600F6A8FF /* ProfilePhotoSelectorView.swift in Sources */,
 				A7F995902A588952003C3C74 /* TweetFilterViewModel.swift in Sources */,
 				A7288F682A47EE4E00D757E1 /* FeedView.swift in Sources */,
 				A7CDFA392A5E923700A157FC /* SideMenuOptionRowView.swift in Sources */,

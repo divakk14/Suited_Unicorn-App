@@ -4,9 +4,7 @@
 //
 //  Created by Divak Maheshwari on 7/17/23.
 //
-
 import SwiftUI
-
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
@@ -15,22 +13,19 @@ struct LoginView: View {
     var body: some View {
         //parent container
         VStack{
-            
             //header view
             AuthHeaderView(title1: "Hello", title2: "Welcome Back.")
-            
             VStack(spacing: 40){
                 CustominputField(imageName: "envelope",
                                  placeholderText: "Email",
                                  text: $email)
                 CustominputField(imageName: "lock",
                                  placeholderText: "Password",
+                                 isSecureField: true,
                                  text: $password)
             }
-
             .padding(.horizontal, 32)
             .padding(.top, 44)
-            
             HStack{
                 Spacer()
                 NavigationLink{
@@ -44,7 +39,6 @@ struct LoginView: View {
                         .padding(.trailing, 24)
                 }
             }
-            
             Button{
                 viewModel.login(withEmail: email, password: password)
 //                print("Sign In here..")
@@ -58,9 +52,7 @@ struct LoginView: View {
                     .padding()
             }
             .shadow(color: .gray.opacity(0.5),radius: 10, x:0, y:0)
-            
             Spacer()
-             
             NavigationLink{
                 RegistrationView()
                     .navigationBarHidden(true)
@@ -72,17 +64,14 @@ struct LoginView: View {
                         .font(.body)
                         .fontWeight(.semibold)
                 }
-                
             }
             .padding(.bottom, 32)
             .foregroundColor(Color(.systemBlue))
-            
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
     }
 }
-
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
