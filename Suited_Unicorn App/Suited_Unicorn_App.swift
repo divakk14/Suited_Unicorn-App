@@ -20,8 +20,7 @@ struct Suited_Unicorn_App: App {
 //                ContentView()
                 //LoginView()
                 //SplashScreenView()
-//                ContentView()
-                ProfilePhotoSelectorView()
+                ContentView()
             }
             .environmentObject(viewModel)
         }
