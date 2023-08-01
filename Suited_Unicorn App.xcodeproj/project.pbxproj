@@ -19,7 +19,6 @@
 		6F3189522A5E8058000E6BB4 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189512A5E8058000E6BB4 /* SideMenuViewModel.swift */; };
 		6F3189542A5E83C0000E6BB4 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189532A5E83C0000E6BB4 /* UserStatsView.swift */; };
 		6F8189B42A78ACE6006D9BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */; };
-		6F8189B82A78B57D006D9BF7 /* add-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8189B72A78B57D006D9BF7 /* add-photo.png */; };
 		6FCF822D2A4AA39E000A21F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF822C2A4AA39E000A21F8 /* ProfileView.swift */; };
 		6FD68E9F2A70ECF00091F861 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68E9E2A70ECF00091F861 /* FirebaseAuth */; };
 		6FD68EA12A70ECF00091F861 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA02A70ECF00091F861 /* FirebaseFirestore */; };
@@ -32,6 +31,7 @@
 		A7288F562A47E5A000D757E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */; };
 		A7288F682A47EE4E00D757E1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F672A47EE4E00D757E1 /* FeedView.swift */; };
 		A7288F6B2A47F0E100D757E1 /* TweetsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7288F6A2A47F0E100D757E1 /* TweetsRowView.swift */; };
+		A73BDFD52A78BD6F00524A85 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BDFD42A78BD6F00524A85 /* ImagePicker.swift */; };
 		A79D849B2A6EFB1F00DFCA86 /* CustominputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D849A2A6EFB1F00DFCA86 /* CustominputField.swift */; };
 		A79D849E2A6EFEB200DFCA86 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D849D2A6EFEB200DFCA86 /* AuthHeaderView.swift */; };
 		A7C0FBFD2A74CDFB003A0EE9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C0FBFC2A74CDFB003A0EE9 /* AuthViewModel.swift */; };
@@ -57,7 +57,6 @@
 		6F3189512A5E8058000E6BB4 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewModel.swift; path = "Suited_Unicorn App/Core/Profile/Views/SideMenuViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		6F3189532A5E83C0000E6BB4 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6F8189B72A78B57D006D9BF7 /* add-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-photo.png"; sourceTree = "<group>"; };
 		6FCF822C2A4AA39E000A21F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A70931432A7760A600F6A8FF /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		A7288F4B2A47E59F00D757E1 /* Suited_Unicorn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suited_Unicorn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +66,7 @@
 		A7288F552A47E5A000D757E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7288F672A47EE4E00D757E1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A7288F6A2A47F0E100D757E1 /* TweetsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRowView.swift; sourceTree = "<group>"; };
+		A73BDFD42A78BD6F00524A85 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A79D849A2A6EFB1F00DFCA86 /* CustominputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustominputField.swift; sourceTree = "<group>"; };
 		A79D849D2A6EFEB200DFCA86 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		A7C0FBFC2A74CDFB003A0EE9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -203,13 +203,13 @@
 		A7288F4D2A47E59F00D757E1 /* Suited_Unicorn App */ = {
 			isa = PBXGroup;
 			children = (
+				A73BDFD32A78BD5500524A85 /* Utils */,
 				A7288F622A47ED4900D757E1 /* Model */,
 				A7288F612A47ED4300D757E1 /* Extensions */,
 				A7288F602A47ED3E00D757E1 /* Service */,
 				A7288F5C2A47ED0800D757E1 /* Core */,
 				A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */,
 				A7288F502A47E59F00D757E1 /* ContentView.swift */,
-				6F8189B72A78B57D006D9BF7 /* add-photo.png */,
 				A7288F522A47E5A000D757E1 /* Assets.xcassets */,
 				6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */,
 				A7288F542A47E5A000D757E1 /* Preview Content */,
@@ -308,6 +308,14 @@
 				A7CDFA362A5BF95400A157FC /* TweetFilterViewModel.swift */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		A73BDFD32A78BD5500524A85 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A73BDFD42A78BD6F00524A85 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A79D849C2A6EFE9200DFCA86 /* Authentication */ = {
@@ -463,7 +471,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F8189B82A78B57D006D9BF7 /* add-photo.png in Resources */,
 				A7288F562A47E5A000D757E1 /* Preview Assets.xcassets in Resources */,
 				A7288F532A47E5A000D757E1 /* Assets.xcassets in Resources */,
 				6F8189B42A78ACE6006D9BF7 /* GoogleService-Info.plist in Resources */,
@@ -494,6 +501,7 @@
 				A70931442A7760A600F6A8FF /* ProfilePhotoSelectorView.swift in Sources */,
 				A7F995902A588952003C3C74 /* TweetFilterViewModel.swift in Sources */,
 				A7288F682A47EE4E00D757E1 /* FeedView.swift in Sources */,
+				A73BDFD52A78BD6F00524A85 /* ImagePicker.swift in Sources */,
 				A7CDFA392A5E923700A157FC /* SideMenuOptionRowView.swift in Sources */,
 				A7288F4F2A47E59F00D757E1 /* Suited_Unicorn_App.swift in Sources */,
 				A7FB6F032A65DAE7006C14EF /* LoginView.swift in Sources */,

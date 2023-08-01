@@ -29,7 +29,7 @@ class AuthViewModel: ObservableObject{
         }
     }
     
-    func register(withEmail email: String, password: String, fullname: String, username: String ){
+    func register(withEmail email: String, password: String, fullname: String, age: String, username: String ){
         Auth.auth().createUser(withEmail: email, password: password){result, error in
             if let error = error{
                 print("DEBUG : failed to register with error\(error.localizedDescription)")
@@ -43,6 +43,7 @@ class AuthViewModel: ObservableObject{
             let data = ["email": email,
                         "username": username.lowercased(),
                         "fullname": fullname,
+                        "age": age,
                         "uid":user.uid]
             
             Firestore.firestore().collection("users")

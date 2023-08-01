@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ProfilePhotoSelectorView: View {
+    @State private var showImagePicker = false
+    @State private var selectedImage : UIImage?
+    @State private var profileImage: Image?
     var body: some View {
         VStack{
-            AuthHeaderView(title1: "Create your account",
+            AuthHeaderView(title1: "Setup account",
                            title2: "Add a profile picture")
             
             Button{
-                print("Select the picture from here..")
+                showImagePicker.toggle()
+                
             }label:{
                 Image("photo_plus")
                     .resizable()
@@ -25,7 +29,10 @@ struct ProfilePhotoSelectorView: View {
                     .padding(.top, 44)
                 
             }
-            
+            .sheet(isPresented: $showImagePicker){
+                ImagePicker(selectedImage: $selectedImage)
+            }
+        
             Spacer()
         }
         .ignoresSafeArea()

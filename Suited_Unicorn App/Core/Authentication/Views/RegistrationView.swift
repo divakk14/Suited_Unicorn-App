@@ -26,7 +26,7 @@ struct RegistrationView: View {
                                              placeholderText: "Username",
                                              text: $username)
                             CustominputField(imageName: "person",
-                                             placeholderText: "age",
+                                             placeholderText: "Age",
                                              text: $age)
                             CustominputField(imageName: "envelope",
                                              placeholderText: "Email",
@@ -42,6 +42,7 @@ struct RegistrationView: View {
                             viewModel.register(withEmail: email,
                                                password: password,
                                                fullname: fullname,
+                                               age: age,
                                                username: username)
                         } label: {
                             Text("Sign Up")
