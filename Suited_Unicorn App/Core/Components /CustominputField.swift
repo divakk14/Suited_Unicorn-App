@@ -11,6 +11,7 @@ struct CustominputField: View {
     let placeholderText: String
     var isSecureField: Bool? = false
     @Binding var text: String
+    var isNumeric: Bool? = false
     
     var body: some View {
         VStack{

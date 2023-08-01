@@ -26,8 +26,10 @@ struct RegistrationView: View {
                                              placeholderText: "Username",
                                              text: $username)
                             CustominputField(imageName: "person",
-                                             placeholderText: "Age",
-                                             text: $age)
+                                                     placeholderText: "Age",
+                                                     isSecureField: false,
+                                                     text: $age) // update this to use string input
+
                             CustominputField(imageName: "envelope",
                                              placeholderText: "Email",
                                              text: $email)
