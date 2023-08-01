@@ -21,7 +21,7 @@ struct ProfilePhotoSelectorView: View {
                     .renderingMode(.template)
                     .foregroundColor(Color(.systemBlue))
                     .scaledToFill()
-                    .frame(width: 180, height: 180)
+                    .frame(width: 100, height: 100)
                     .padding(.top, 44)
                 
             }

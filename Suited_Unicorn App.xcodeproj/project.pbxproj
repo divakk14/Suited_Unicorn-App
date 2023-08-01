@@ -18,8 +18,9 @@
 		6F3189502A5E8046000E6BB4 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31894F2A5E8046000E6BB4 /* SideMenuRowView.swift */; };
 		6F3189522A5E8058000E6BB4 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189512A5E8058000E6BB4 /* SideMenuViewModel.swift */; };
 		6F3189542A5E83C0000E6BB4 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189532A5E83C0000E6BB4 /* UserStatsView.swift */; };
+		6F8189B42A78ACE6006D9BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */; };
+		6F8189B82A78B57D006D9BF7 /* add-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8189B72A78B57D006D9BF7 /* add-photo.png */; };
 		6FCF822D2A4AA39E000A21F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF822C2A4AA39E000A21F8 /* ProfileView.swift */; };
-		6FD68E9C2A70EC080091F861 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD68E9B2A70EC080091F861 /* GoogleService-Info.plist */; };
 		6FD68E9F2A70ECF00091F861 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68E9E2A70ECF00091F861 /* FirebaseAuth */; };
 		6FD68EA12A70ECF00091F861 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA02A70ECF00091F861 /* FirebaseFirestore */; };
 		6FD68EA32A70ECF00091F861 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD68EA22A70ECF00091F861 /* FirebaseFirestoreSwift */; };
@@ -55,8 +56,9 @@
 		6F31894F2A5E8046000E6BB4 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuRowView.swift; path = "Suited_Unicorn App/Core/Profile/Views/SideMenuRowView.swift"; sourceTree = SOURCE_ROOT; };
 		6F3189512A5E8058000E6BB4 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewModel.swift; path = "Suited_Unicorn App/Core/Profile/Views/SideMenuViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		6F3189532A5E83C0000E6BB4 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F8189B72A78B57D006D9BF7 /* add-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-photo.png"; sourceTree = "<group>"; };
 		6FCF822C2A4AA39E000A21F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		6FD68E9B2A70EC080091F861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A70931432A7760A600F6A8FF /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		A7288F4B2A47E59F00D757E1 /* Suited_Unicorn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suited_Unicorn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suited_Unicorn_App.swift; sourceTree = "<group>"; };
@@ -207,8 +209,9 @@
 				A7288F5C2A47ED0800D757E1 /* Core */,
 				A7288F4E2A47E59F00D757E1 /* Suited_Unicorn_App.swift */,
 				A7288F502A47E59F00D757E1 /* ContentView.swift */,
+				6F8189B72A78B57D006D9BF7 /* add-photo.png */,
 				A7288F522A47E5A000D757E1 /* Assets.xcassets */,
-				6FD68E9B2A70EC080091F861 /* GoogleService-Info.plist */,
+				6F8189B32A78ACE6006D9BF7 /* GoogleService-Info.plist */,
 				A7288F542A47E5A000D757E1 /* Preview Content */,
 			);
 			path = "Suited_Unicorn App";
@@ -460,9 +463,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8189B82A78B57D006D9BF7 /* add-photo.png in Resources */,
 				A7288F562A47E5A000D757E1 /* Preview Assets.xcassets in Resources */,
 				A7288F532A47E5A000D757E1 /* Assets.xcassets in Resources */,
-				6FD68E9C2A70EC080091F861 /* GoogleService-Info.plist in Resources */,
+				6F8189B42A78ACE6006D9BF7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

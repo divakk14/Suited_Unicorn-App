@@ -18,7 +18,7 @@ struct RegistrationView: View {
                     VStack {
                         AuthHeaderView(title1: "Get Started", title2: "Create Your Account.")
                         
-                        VStack(spacing: 40) {
+                        VStack(spacing: 40) { 
                             CustominputField(imageName: "person",
                                              placeholderText: "Fullname",
                                              text: $fullname)
