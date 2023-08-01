@@ -20,13 +20,25 @@ struct ProfilePhotoSelectorView: View {
                 showImagePicker.toggle()
                 
             }label:{
-                Image("photo_plus")
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(Color(.systemBlue))
-                    .scaledToFill()
-                    .frame(width: 100, height: 100)
-                    .padding(.top, 44)
+                if let profileImage = profileImage{
+                    profileImage
+                        .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(Color(.systemBlue))
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .padding(.top, 44)
+                        .clipShape(Circle())
+                }else{
+                    Image("photo_plus")
+                        .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(Color(.systemBlue))
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .padding(.top, 44)
+                        .clipShape(Circle())
+                }
                 
             }
             .sheet(isPresented: $showImagePicker){
