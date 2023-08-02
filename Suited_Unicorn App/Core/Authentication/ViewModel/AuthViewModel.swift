@@ -66,14 +66,14 @@ class AuthViewModel: ObservableObject{
         //signs user out on server(backend)
         try? Auth.auth().signOut()
     }
-    func uploadProfileImage (_image: UIImage){
+    func uploadProfileImage (_ image: UIImage){
         guard let uid = tempUserSession?.uid else{ return }
         
         ImageUploader.uploadImage(image: image) {profileImageUrl in
             Firestore.firestore().collection("users")
                 .document(uid)
                 .updateData(["profileImageUrl": profileImageUrl]) {_ in
-                    self.userSession = tempUserSession
+                    self.userSession = self.tempUserSession
                 }
         }
         

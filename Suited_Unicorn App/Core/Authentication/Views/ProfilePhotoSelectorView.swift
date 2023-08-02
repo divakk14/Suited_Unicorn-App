@@ -9,7 +9,7 @@ struct ProfilePhotoSelectorView: View {
     @State private var showImagePicker = false
     @State private var selectedImage : UIImage?
     @State private var profileImage: Image?
-    @EnvironmentObject var viewMode: AuthViewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack{
