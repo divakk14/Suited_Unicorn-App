@@ -5,6 +5,8 @@
 //  Created by Divak Maheshwari on 6/24/23.
 //
 import SwiftUI
+import Kingfisher
+
 struct ContentView: View{
     @State private var showMenu = false
     @EnvironmentObject var viewModel: AuthViewModel
@@ -55,15 +57,20 @@ extension ContentView{
         .navigationBarTitleDisplayMode(.inline)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading){
-                Button{
-                    withAnimation(.easeInOut){
-                        showMenu.toggle()
+                if let user = viewModel.currentUser{
+                        Button{
+                            withAnimation(.easeInOut){
+                                showMenu.toggle()
+                            }
+                        }
+                    label:{
+                        KFImage(URL(string: user.profileImageUrl))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 32, height: 32)
+                            .clipShape(Circle())
                     }
                 }
-            label:{
-                Circle()
-                    .frame(width: 32, height: 32)
-            }
             }
         }
         .onAppear{
