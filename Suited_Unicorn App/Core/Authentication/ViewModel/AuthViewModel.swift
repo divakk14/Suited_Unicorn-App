@@ -28,7 +28,7 @@ class AuthViewModel: ObservableObject{
                 print("DEBUG : failed to sign in with error\(error.localizedDescription)")
                 return
             }
-            guard let user = result?.user else {return}
+            guard (result?.user) != nil else {return}
              print("DEBUG: Did log user in..")
             
         }
@@ -53,7 +53,7 @@ class AuthViewModel: ObservableObject{
                         "username": username.lowercased(),
                         "fullname": fullname,
                         "age" : ageInt,
-                        "uid":user.uid]
+                        "uid":user.uid] as [String : Any]
             
             Firestore.firestore().collection("users")
                 .document(user.uid)
@@ -83,7 +83,10 @@ class AuthViewModel: ObservableObject{
     }
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
-        service.fetchUser(with: uid)
+        
+        service.fetchUser(with: uid) { user in
+            self.currentUser = user
+        }
 
     }
     
