@@ -28,8 +28,10 @@ class AuthViewModel: ObservableObject{
                 print("DEBUG : failed to sign in with error\(error.localizedDescription)")
                 return
             }
-            guard (result?.user) != nil else {return}
-             print("DEBUG: Did log user in..")
+            
+            guard let user = result?.user else {return}
+            self.userSession = user
+            self.fetchUser()
             
         }
     }
@@ -77,9 +79,9 @@ class AuthViewModel: ObservableObject{
                 .document(uid)
                 .updateData(["profileImageUrl": profileImageUrl]) { _ in
                     self.userSession = self.tempUserSession
+                    self.fetchUser()
                 }
         }
-        
     }
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
