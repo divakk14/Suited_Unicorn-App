@@ -6,34 +6,40 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileView: View {
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Environment(\.presentationMode) var mode
     @Namespace var animation
+    private let user: User
+    
+    init(user: User){
+        self.user = user
+    }
     
     var body: some View {
         VStack(alignment: .leading){
             headerView
-            
             actionButtons
-            
             userInfoDetails
-            
             tweetFilterBar
             tweetsView
-            
+    
             Spacer()
         }
+        .navigationBarHidden(true)
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(user: User(username: "Divak",
+                               fullname: "Divak Maheshwari",
+                               profileImageUrl: "",
+                               email: "divak.m14@gmail.com"))
     }
 }
-
 
 extension ProfileView{
     var headerView: some View{
@@ -49,12 +55,15 @@ extension ProfileView{
                         .resizable()
                         .frame(width: 20, height: 16)
                         .foregroundColor(.white)
-                        .offset(x : 16, y : 12)
+                        .offset(x : 16, y : -4)
                     
                 }
-                Circle()
+                KFImage(URL(string: user.profileImageUrl))
+                    .resizable()
+                    .scaledToFill()
+                    .clipShape(Circle())
                     .frame(width: 72, height: 72)
-                .offset(x:16 , y: 24)
+                    .offset(x:16 , y: 24)
             }
             
         }
@@ -83,18 +92,19 @@ extension ProfileView{
     var userInfoDetails: some View{
         VStack(alignment: .leading,spacing: 4){
             HStack {
-                Text("Heath Ledger ")
+                Text(user.fullname)
                     .font(.title2).bold()
                 Image(systemName: "checkmark.seal.fill")
                     .foregroundColor(Color(.systemBlue))
             }
-            Text("@joker")
+            Text("@\(user.username)")
                 .font(.subheadline)
                 .foregroundColor(.gray)
             
             Text("Your moms favorite villain")
                 .font(.subheadline)
                 .padding(.vertical)
+            
             HStack(spacing: 24){
                 HStack{
                     Image(systemName: "mappin.and.ellipse")
@@ -106,12 +116,9 @@ extension ProfileView{
                     Image(systemName: "link")
                     Text("www.thejoker.com")
                     
-                    
                 }
                 .font(.caption)
                 .foregroundColor(.gray)
-                
-                
                 
             }
             UserStatsView()
