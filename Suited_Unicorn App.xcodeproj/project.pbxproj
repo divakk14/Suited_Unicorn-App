@@ -39,6 +39,8 @@
 		A7CDFA372A5BF95400A157FC /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFA362A5BF95400A157FC /* TweetFilterViewModel.swift */; };
 		A7CDFA392A5E923700A157FC /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDFA382A5E923700A157FC /* SideMenuOptionRowView.swift */; };
 		A7D34B3C2A78F59C00716926 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D34B3B2A78F59C00716926 /* ImageUploader.swift */; };
+		A7E073062A7F6FD700E9B4D5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E073052A7F6FD700E9B4D5 /* UserService.swift */; };
+		A7E073082A7F752E00E9B4D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E073072A7F752E00E9B4D5 /* User.swift */; };
 		A7F995902A588952003C3C74 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9958F2A588952003C3C74 /* TweetFilterViewModel.swift */; };
 		A7F995952A58AC90003C3C74 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F995942A58AC90003C3C74 /* UserRowView.swift */; };
 		A7FB6F032A65DAE7006C14EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB6F022A65DAE7006C14EF /* LoginView.swift */; };
@@ -76,6 +78,8 @@
 		A7CDFA362A5BF95400A157FC /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		A7CDFA382A5E923700A157FC /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		A7D34B3B2A78F59C00716926 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageUploader.swift; path = "Suited_Unicorn App/Utils/ImageUploader.swift"; sourceTree = SOURCE_ROOT; };
+		A7E073052A7F6FD700E9B4D5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = "Suited_Unicorn App/Utils/UserService.swift"; sourceTree = SOURCE_ROOT; };
+		A7E073072A7F752E00E9B4D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Suited_Unicorn App/Utils/User.swift"; sourceTree = SOURCE_ROOT; };
 		A7F9958F2A588952003C3C74 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TweetFilterViewModel.swift; path = "Suited_Unicorn App/Core/Components /Tweets/TweetFilterViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		A7F995942A58AC90003C3C74 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		A7FB6F022A65DAE7006C14EF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D34B3B2A78F59C00716926 /* ImageUploader.swift */,
+				A7E073052A7F6FD700E9B4D5 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 		A7288F622A47ED4900D757E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A7E073072A7F752E00E9B4D5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				6F28D1362A4928190054705A /* MessagesView.swift in Sources */,
 				6F2485B42A6011EE003A6DAA /* TextArea.swift in Sources */,
 				6FCF822D2A4AA39E000A21F8 /* ProfileView.swift in Sources */,
+				A7E073082A7F752E00E9B4D5 /* User.swift in Sources */,
 				6F2485B22A601049003A6DAA /* ViewTweetView.swift in Sources */,
 				6F3189502A5E8046000E6BB4 /* SideMenuRowView.swift in Sources */,
 				6F8189BC2A78CB43006D9BF7 /* CustomNumericInputField.swift in Sources */,
@@ -503,6 +510,7 @@
 				A7288F512A47E59F00D757E1 /* ContentView.swift in Sources */,
 				A7288F6B2A47F0E100D757E1 /* TweetsRowView.swift in Sources */,
 				6F3189542A5E83C0000E6BB4 /* UserStatsView.swift in Sources */,
+				A7E073062A7F6FD700E9B4D5 /* UserService.swift in Sources */,
 				A7FB6F052A65DB04006C14EF /* RegistrationView.swift in Sources */,
 				A7FB6F072A65DD73006C14EF /* RoundedShape.swift in Sources */,
 				A70931442A7760A600F6A8FF /* ProfilePhotoSelectorView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Firebase
-@main
+ @main
 
 struct Suited_Unicorn_App: App {
     @StateObject var viewModel = AuthViewModel()
