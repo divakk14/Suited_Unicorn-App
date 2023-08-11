@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FeedView: View {
-    
     @State private var showNewTweetView = false
     @ObservedObject var viewModel = FeedViewModel()
     
@@ -42,6 +41,7 @@ struct FeedView: View {
                 
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

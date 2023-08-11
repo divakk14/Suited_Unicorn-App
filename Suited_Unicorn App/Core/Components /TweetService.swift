@@ -6,6 +6,7 @@
 //
 
 import Firebase
+
 struct TweetService{
     
     func uploadTweet(caption: String, completion: @escaping(Bool) -> Void) {
@@ -18,7 +19,7 @@ struct TweetService{
                     "timestamp": Timestamp(date: Date())] as [String: Any]
         Firestore.firestore().collection("tweets").document()
             .setData(data){ error in
-                if let error = error  {
+                if let error = error {
                     print("DEBUG: Failed to upload tweet with error: \(error.localizedDescription)")
                     completion(false)
                     return
@@ -29,11 +30,24 @@ struct TweetService{
     }
     
     func fetchTweets(completion: @escaping([Tweet]) -> Void) {
-        Firestore.firestore().collection("tweets").getDocuments {snapshot, _ in
+        Firestore.firestore().collection("tweets")
+            .order(by: "timestamp", descending: true)
+            .getDocuments {snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             let tweets = documents.compactMap({try?  $0.data(as: Tweet.self) })
             completion(tweets)
             
         }
+    }
+    func fetchTweets(forUid uid: String, completion: @escaping([Tweet]) -> Void){
+        Firestore.firestore().collection("tweets")
+            .order(by: "timestamp", descending: true)
+            .whereField("uid", isEqualTo: uid)
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                let tweets = documents.compactMap({try?  $0.data(as: Tweet.self) })
+                completion(tweets.sorted(by: {$0.timestamp.dateValue() > $1.timestamp.dateValue() }))
+                
+            }
     }
 }
