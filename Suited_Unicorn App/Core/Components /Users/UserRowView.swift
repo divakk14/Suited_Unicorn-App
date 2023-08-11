@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Kingfisher
+
 struct UserRowView: View {
     let user: User
     var body: some View {
@@ -18,9 +19,13 @@ struct UserRowView: View {
                 .frame(width: 56, height: 56)
             
             VStack(alignment: .leading, spacing: 4){
-                Text(user.username).font(.subheadline).bold().foregroundColor(.black)
+                Text(user.username)
+                    .font(.subheadline).bold()
+                    .foregroundColor(.black)
                 
-                Text(user.fullname).font(.subheadline).foregroundColor(.gray)
+                Text(user.fullname)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
             }
             Spacer()
         }

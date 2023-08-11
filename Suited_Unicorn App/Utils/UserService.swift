@@ -21,6 +21,7 @@ struct UserService {
 
             }
     }
+    
     func fetchUsers(completion: @escaping([User]) -> Void){
         
         Firestore.firestore().collection("users")   

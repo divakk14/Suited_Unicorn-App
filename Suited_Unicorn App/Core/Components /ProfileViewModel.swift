@@ -17,7 +17,6 @@ class ProfileViewModel: ObservableObject{
         self.fetchUserTweets()
     }
     
-    
     func fetchUserTweets() {
         guard let uid = user.id else { return }
         
