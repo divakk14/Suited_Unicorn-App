@@ -7,9 +7,18 @@
 
 import Foundation
 class UploadTweetViewModel : ObservableObject{
-    let service = TweetService()
-    func uploadTweet(withcaption caption: String){
-        service.uploadTweet(caption: caption)
-    }
+    @Published var didUploadTweet = false
     
+    let service = TweetService()
+    
+    func uploadTweet(withcaption caption: String){
+        service.uploadTweet(caption: caption){ success in
+            if success {
+                self.didUploadTweet = true
+                
+            }else{
+                //show error message to user..
+            }
+        }
+    }
 }

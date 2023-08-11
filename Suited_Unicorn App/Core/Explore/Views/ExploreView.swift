@@ -16,7 +16,6 @@ struct ExploreView: View {
             SearchBar(text: $viewModel.searchText)
                 .padding()
             
-            
             ScrollView{
                 LazyVStack{
                     ForEach(viewModel.searchableUsers) {user in

@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Kingfisher
-struct ViewTweetView: View {
+struct NewTweetView: View {
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var authViewModel: AuthViewModel
@@ -16,10 +16,13 @@ struct ViewTweetView: View {
         VStack{
             HStack{
                 Button{
-                    presentationMode.wrappedValue.dismiss()                } label:{
+                    presentationMode.wrappedValue.dismiss()
+                    
+                } label:{
                     Text("Cancel") 
                         .foregroundColor(Color(.systemBlue))
                 }
+                
                 Spacer()
                 
                     Button{
@@ -36,6 +39,7 @@ struct ViewTweetView: View {
                     }
             }
             .padding()
+            
             HStack(alignment: .top){
                 if let user = authViewModel.currentUser{
                     KFImage(URL(string: user.profileImageUrl))
@@ -48,13 +52,19 @@ struct ViewTweetView: View {
                 TextArea("Whats on your mind?", text: $caption)
                 
             }
+            
             .padding()
+        }
+        .onReceive(viewModel.$didUploadTweet){success in
+            if success{
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }
 
 struct ViewTweetView_Previews: PreviewProvider {
     static var previews: some View {
-        ViewTweetView()
+        NewTweetView()
     }
 }

@@ -34,8 +34,6 @@ class ExploreViewModel: ObservableObject {
         service.fetchUsers{
             users in
             self.users = users
-            print("Debug : Users \(users)")
-            
         }
     }
 }
