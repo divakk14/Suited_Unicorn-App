@@ -1,11 +1,5 @@
 # Suited_Unicorn-App
 
-
-## video link
-
-YT Video: https://www.youtube.com/watch?v=3pIXMwvJLZs&t=2657s
-
-
 Swift for Fullstack
 
 
@@ -19,7 +13,7 @@ Above 18: All Corporations / Colleges / Company workers . Priority: College stud
 # Technology / software like this that already exists
 
 
-https://developer.apple.com/tutorials/swiftui/creating-and-combining-views#Check-Your-Understanding
+
 
 
 
